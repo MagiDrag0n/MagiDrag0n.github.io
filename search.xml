@@ -31,7 +31,8 @@
     <url>/2020/07/19/BottomFish/</url>
     <content><![CDATA[<p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
 <p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
-<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><ul>
+<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><p>源码已全部打包上传CDN，只需在配置文件引导即可调用。</p>
+<ul>
 <li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
 <p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
