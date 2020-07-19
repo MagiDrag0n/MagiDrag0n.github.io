@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>MagiBlockchain</title>
+    <url>/2020/07/19/MagiBlockchain/</url>
+    <content><![CDATA[<h1 id="MagiBlockchain"><a href="#MagiBlockchain" class="headerlink" title="MagiBlockchain"></a>MagiBlockchain</h1><p>项目类型：区块链</p>
+<p>实现方法：Java , Python</p>
+<p>成立时间：2020-02-21</p>
+<p>项目进度：画饼阶段</p>
+<img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/MagiBlockchain2.png"  />
+
+<hr>
+<h2 id="区块链的概念"><a href="#区块链的概念" class="headerlink" title="区块链的概念"></a>区块链的概念</h2><p>To Be Done</p>
+<h2 id="比特币是如何产生的"><a href="#比特币是如何产生的" class="headerlink" title="比特币是如何产生的"></a>比特币是如何产生的</h2><p>To Be Done</p>
+<h2 id="简单区块链的实现"><a href="#简单区块链的实现" class="headerlink" title="简单区块链的实现"></a>简单区块链的实现</h2><p>To Be Done</p>
+<h2 id="工作量证明机制-POW"><a href="#工作量证明机制-POW" class="headerlink" title="工作量证明机制(POW)"></a>工作量证明机制(POW)</h2><p>工作量证明机制(Proof of Work)</p>
+<p>To Be Done</p>
+<h2 id="POW的整合"><a href="#POW的整合" class="headerlink" title="POW的整合"></a>POW的整合</h2><p>To Be Done</p>
+<h2 id="比特币中的数字签名"><a href="#比特币中的数字签名" class="headerlink" title="比特币中的数字签名"></a>比特币中的数字签名</h2><p>To Be Done</p>
+<h2 id="向MagiBlockchain添加数字签名"><a href="#向MagiBlockchain添加数字签名" class="headerlink" title="向MagiBlockchain添加数字签名"></a>向MagiBlockchain添加数字签名</h2><p>To Be Done</p>
+]]></content>
+      <tags>
+        <tag>Blockchain</tag>
+        <tag>区块链</tag>
+        <tag>Java</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何成为比奇堡公敌</title>
+    <url>/2020/07/19/BottomFish/</url>
+    <content><![CDATA[<p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
+<p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
+<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><ul>
+<li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
+<p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后在<code>themes/butterfly/source/css/_layout/footer.styl</code>调整主题的页脚阴影透明度</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">background-color: alpha($dark-black, .1)  &#x2F;&#x2F;.5改成.1</span><br></pre></td></tr></table></figure>
+</li>
+<li><pre><code class="commonlisp">hexo clean
+hexo d -g
+hexo s</code></pre>
+<p>至此你就可以看到鱼生生不息地在你的鱼塘里翻滚啦！！！</p>
+<p>感谢木槿指导，不然我也成为不了鱼塘霸主，哈哈哈。</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>博客美化</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 知识点复习</title>
     <url>/2020/07/18/JavaReview/</url>
     <content><![CDATA[<p>软件工程专业第一门语言学的是Java，要是没学好，只能下辈子注意点了。</p>
@@ -447,49 +499,41 @@
       </tags>
   </entry>
   <entry>
-    <title>忙着生活-711全世界都在早起听Eason</title>
-    <url>/2020/07/11/BusyAndMusic/</url>
-    <content><![CDATA[<h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
-
-<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<blockquote>
-<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
-</blockquote>
+    <title>懒人一键生成世界大同的Logo</title>
+    <url>/2020/07/18/LazyLogo/</url>
+    <content><![CDATA[<p>在互联网冲浪多年的你，会不会常常为做封面、做Logo而头疼？这一次你可以真正阅后即会！</p>
+<p>以下推荐的Logo风格在我看来，或是世界大同的、或是设计精巧的、亦会是引人忍俊不禁的。</p>
 <hr>
-<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
+<h2 id="http-textcraft-net"><a href="#http-textcraft-net" class="headerlink" title="http://textcraft.net/"></a><strong><a href="http://textcraft.net/" target="_blank" rel="noopener">http://textcraft.net/</a></strong></h2><p>这是一款8-bit风格字体Logo生成器，支持定制材质、艺术字体。玩过MineCraft的你一定不会感到陌生。</p>
+<p>我想说一句，Creeper?</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/textcraft.png" alt=""></p>
+<hr>
+<h2 id="https-www-logomaker-com-cn"><a href="#https-www-logomaker-com-cn" class="headerlink" title="https://www.logomaker.com.cn/"></a><strong><a href="https://www.logomaker.com.cn/" target="_blank" rel="noopener">https://www.logomaker.com.cn/</a></strong></h2><p>这是一款大数据学习下定制Logo的网站，仅需输入名称、行业便可自动生成十几个Logo，其中包括了可直接商用的Logo。同时该网站支持个性化编辑和源文件下载，如果你钞能力十足甚至可以专属私人订制！</p>
+<blockquote>
+<p>不可避免的是，大数据也存在不完美、不人性的地方。在不充足的机器学习与Logo资源之下，这很容易导致同质化，换句话说就是大家长得好像都一样，你是李逵还是李鬼。<strong>—大数据人工智能专家 沃兹基索德</strong></p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logomaker.png" alt=""></p>
+<hr>
+<h2 id="https-www-logoko-com-cn"><a href="#https-www-logoko-com-cn" class="headerlink" title="https://www.logoko.com.cn/"></a><strong><a href="https://www.logoko.com.cn/" target="_blank" rel="noopener">https://www.logoko.com.cn/</a></strong></h2><p>相比较第二款，这款则是专注于提供素材的DIY网站。内置许多精美的字体、图片素材，可以直接下载使用。可惜美中不足的是并不支持矢量源文件的下载，只支持成品导出。</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logoko.png" alt=""></p>
+<hr>
+<h2 id="https-www-logoly-pro"><a href="#https-www-logoly-pro" class="headerlink" title="https://www.logoly.pro/"></a><strong><a href="https://www.logoly.pro/" target="_blank" rel="noopener">https://www.logoly.pro/</a></strong></h2><p>这是一个Github上很热门的开源项目。收获5.1k个Star。应该是出于快速上线的考量，采用的是Vue为主的开发。</p>
+<p>功能怎么样呢？我只能说，懂的都懂好吧！</p>
+<p>上手非常简单，这种风格的Logo只需文字、底色便可完成设计。</p>
+<p><strong>什么叫国际大同设计啊（战术后仰）</strong></p>
+<blockquote>
+<p>备注：Github是全球最大的程序员交友网站，什么？你问我P开头的，你很危险！</p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/post3_img.png" alt=""></p>
+<p>此情此景，我想唱诗一首：<strong><em>秋名山上行人稀，常有车手较高低，赛车跑道今犹在，不见当年老司机。</em></strong></p>
+<p>最后，提醒一下广大<strong><del>司机</del></strong>朋友们，请一定一定确认是否符合商用条件。</p>
 ]]></content>
       <tags>
-        <tag>LifeBlog</tag>
+        <tag>Logo</tag>
       </tags>
   </entry>
   <entry>
-    <title>如何成为比奇堡公敌</title>
-    <url>/2020/07/19/BottomFish/</url>
-    <content><![CDATA[<p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
-<p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
-<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><ul>
-<li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后在<code>themes/butterfly/source/css/_layout/footer.styl</code>调整主题的页脚阴影透明度</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">background-color: alpha($dark-black, .1)  &#x2F;&#x2F;.5改成.1</span><br></pre></td></tr></table></figure>
-</li>
-<li><pre><code class="commonlisp">hexo clean
-hexo d -g
-hexo s</code></pre>
-<p>至此你就可以看到鱼生生不息地在你的鱼塘里翻滚啦！！！</p>
-<p>感谢木槿指导，不然我也成为不了鱼塘霸主，哈哈哈。</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>博客美化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoBlog-十分钟建站并上线</title>
+    <title>十分钟建站并上线</title>
     <url>/2020/07/16/HexoBlog-OnlineInTen/</url>
     <content><![CDATA[<p>看到我的小小博客，或者看到很多大大的博客，你是不是也心动了！也想试试自己建站了呢？</p>
 <p>Very Easy！和我一起利用十分钟建立属于你的网站并上线吧！</p>
@@ -526,45 +570,11 @@ hexo s</code></pre>
 </ul>
 <ul>
 <li><h3 id="安装Git推送套件："><a href="#安装Git推送套件：" class="headerlink" title="安装Git推送套件："></a>安装Git推送套件：</h3><p>在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br><span class="line">  </span><br><span class="line">cnpm install --save hexo-deployer-git （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
-
-<p>Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</p>
-</li>
-</ul>
-<hr>
-<h1 id="Hexo本地建站"><a href="#Hexo本地建站" class="headerlink" title="Hexo本地建站"></a>Hexo本地建站</h1><ul>
-<li><h3 id="快速开始："><a href="#快速开始：" class="headerlink" title="快速开始："></a>快速开始：</h3><p>在命令行中输入：</p>
-<p><code>hexo init</code></p>
-<p>此步骤会自动克隆一个Landscape的主题博客</p>
-<p>并且你将在你的博客目录下看到自动生成的文件</p>
-</li>
-<li><h3 id="启动本地博客服务器："><a href="#启动本地博客服务器：" class="headerlink" title="启动本地博客服务器："></a>启动本地博客服务器：</h3><p>在命令行中输入：</p>
-<p><code>hexo s</code></p>
-<p>将会提示你：</p>
-<p><code>INFO  Start processing.</code><br><code>INFO  Hexo is running at http://localhost:4000.Press Ctrl+C to stop.</code></p>
-<p>此时在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可查看你的博客！</p>
-<p>其中的博文便包含了一些简易的操作指令与讲解</p>
-<p><strong>恭喜！你已经迈出了令人愉快的第一步！</strong></p>
-</li>
-</ul>
-<hr>
-<h1 id="Hexo的Github上线"><a href="#Hexo的Github上线" class="headerlink" title="Hexo的Github上线"></a>Hexo的Github上线</h1><p>我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站<a href="https://github.com" target="_blank" rel="noopener">Github</a>提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</p>
-<ul>
-<li><h3 id="Github账户创建一个项目"><a href="#Github账户创建一个项目" class="headerlink" title="Github账户创建一个项目"></a>Github账户创建一个项目</h3><p>使用你刚才创建的Github账户，在主页右上角找到新建项目<strong>New repository</strong></p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide1.png" alt=""></p>
-<p>并建立一个与你名称相同前缀的项目名<strong>(YourName.github.io)</strong></p>
-<p>此处因为我已经创建过所以不能重复创建，你可直接点<strong>Create repository</strong></p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide2.png" alt=""></p>
-</li>
-</ul>
-<ul>
-<li><h3 id="配置Git推送套件"><a href="#配置Git推送套件" class="headerlink" title="配置Git推送套件"></a>配置Git推送套件</h3><p>打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide3.png" alt=""></p>
-<p>在代码末尾添加：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  	<span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">	<span class="attr">repo:</span> <span class="string">"https://github.com/你的名字/你的名字.github.io.git"</span></span><br><span class="line">  	<span class="attr">branch:</span> <span class="string">"master"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
+<p>cnpm install –save hexo-deployer-git （调整了镜像输入这个）<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Hexo本地建站</span><br><span class="line"></span><br><span class="line">- ### 快速开始：</span><br><span class="line"></span><br><span class="line">  在命令行中输入：</span><br><span class="line"></span><br><span class="line">  &#96;hexo init&#96;</span><br><span class="line"></span><br><span class="line">  此步骤会自动克隆一个Landscape的主题博客</span><br><span class="line"></span><br><span class="line">  并且你将在你的博客目录下看到自动生成的文件</span><br><span class="line"></span><br><span class="line">- ### 启动本地博客服务器：</span><br><span class="line"></span><br><span class="line">  在命令行中输入：</span><br><span class="line"></span><br><span class="line">  &#96;hexo s&#96;</span><br><span class="line"></span><br><span class="line">  将会提示你：</span><br><span class="line"></span><br><span class="line">  &#96;INFO  Start processing.&#96;</span><br><span class="line">  &#96;INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000.Press Ctrl+C to stop.&#96;</span><br><span class="line"></span><br><span class="line">  此时在浏览器中输入 http:&#x2F;&#x2F;localhost:4000 便可查看你的博客！</span><br><span class="line"></span><br><span class="line">  其中的博文便包含了一些简易的操作指令与讲解</span><br><span class="line"></span><br><span class="line">  **恭喜！你已经迈出了令人愉快的第一步！**</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Hexo的Github上线</span><br><span class="line"></span><br><span class="line">我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站[Github](https:&#x2F;&#x2F;github.com)提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</span><br><span class="line"></span><br><span class="line">- ### Github账户创建一个项目</span><br><span class="line"></span><br><span class="line">  使用你刚才创建的Github账户，在主页右上角找到新建项目**New repository**</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide1.png)</span><br><span class="line"></span><br><span class="line">  并建立一个与你名称相同前缀的项目名**(YourName.github.io)**</span><br><span class="line"></span><br><span class="line">  此处因为我已经创建过所以不能重复创建，你可直接点**Create repository**</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide2.png)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">- ### 配置Git推送套件</span><br><span class="line"></span><br><span class="line">  打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide3.png)</span><br><span class="line"></span><br><span class="line">  在代码末尾添加：</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;yaml</span><br><span class="line">deploy:</span><br><span class="line">  	type: &#39;git&#39;</span><br><span class="line">	repo: &quot;https:&#x2F;&#x2F;github.com&#x2F;你的名字&#x2F;你的名字.github.io.git&quot;</span><br><span class="line">  	branch: &quot;master&quot;</span><br></pre></td></tr></table></figure></p>
 <p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide4.png" alt=""></p>
 <p>至此Git推送套件已准备就绪</p>
 <ul>
@@ -609,41 +619,26 @@ hexo s</code></pre>
 <p>2020 年 7 月 16 日 凌晨 1：20 完稿</p>
 ]]></content>
       <tags>
-        <tag>Hexo建站</tag>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
-    <title>懒人一键生成世界大同的Logo</title>
-    <url>/2020/07/18/LazyLogo/</url>
-    <content><![CDATA[<p>在互联网冲浪多年的你，会不会常常为做封面、做Logo而头疼？这一次你可以真正阅后即会！</p>
-<p>以下推荐的Logo风格在我看来，或是世界大同的、或是设计精巧的、亦会是引人忍俊不禁的。</p>
-<hr>
-<h2 id="http-textcraft-net"><a href="#http-textcraft-net" class="headerlink" title="http://textcraft.net/"></a><strong><a href="http://textcraft.net/" target="_blank" rel="noopener">http://textcraft.net/</a></strong></h2><p>这是一款8-bit风格字体Logo生成器，支持定制材质、艺术字体。玩过MineCraft的你一定不会感到陌生。</p>
-<p>我想说一句，Creeper?</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/textcraft.png" alt=""></p>
-<hr>
-<h2 id="https-www-logomaker-com-cn"><a href="#https-www-logomaker-com-cn" class="headerlink" title="https://www.logomaker.com.cn/"></a><strong><a href="https://www.logomaker.com.cn/" target="_blank" rel="noopener">https://www.logomaker.com.cn/</a></strong></h2><p>这是一款大数据学习下定制Logo的网站，仅需输入名称、行业便可自动生成十几个Logo，其中包括了可直接商用的Logo。同时该网站支持个性化编辑和源文件下载，如果你钞能力十足甚至可以专属私人订制！</p>
+    <title>711全世界都在早起听Eason</title>
+    <url>/2020/07/11/BusyAndMusic/</url>
+    <content><![CDATA[<h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
+
+<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 <blockquote>
-<p>不可避免的是，大数据也存在不完美、不人性的地方。在不充足的机器学习与Logo资源之下，这很容易导致同质化，换句话说就是大家长得好像都一样，你是李逵还是李鬼。<strong>—大数据人工智能专家 沃兹基索德</strong></p>
+<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
 </blockquote>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logomaker.png" alt=""></p>
 <hr>
-<h2 id="https-www-logoko-com-cn"><a href="#https-www-logoko-com-cn" class="headerlink" title="https://www.logoko.com.cn/"></a><strong><a href="https://www.logoko.com.cn/" target="_blank" rel="noopener">https://www.logoko.com.cn/</a></strong></h2><p>相比较第二款，这款则是专注于提供素材的DIY网站。内置许多精美的字体、图片素材，可以直接下载使用。可惜美中不足的是并不支持矢量源文件的下载，只支持成品导出。</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logoko.png" alt=""></p>
-<hr>
-<h2 id="https-www-logoly-pro"><a href="#https-www-logoly-pro" class="headerlink" title="https://www.logoly.pro/"></a><strong><a href="https://www.logoly.pro/" target="_blank" rel="noopener">https://www.logoly.pro/</a></strong></h2><p>这是一个Github上很热门的开源项目。收获5.1k个Star。应该是出于快速上线的考量，采用的是Vue为主的开发。</p>
-<p>功能怎么样呢？我只能说，懂的都懂好吧！</p>
-<p>上手非常简单，这种风格的Logo只需文字、底色便可完成设计。</p>
-<p><strong>什么叫国际大同设计啊（战术后仰）</strong></p>
-<blockquote>
-<p>备注：Github是全球最大的程序员交友网站，什么？你问我P开头的，你很危险！</p>
-</blockquote>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/post3_img.png" alt=""></p>
-<p>此情此景，我想唱诗一首：<strong><em>秋名山上行人稀，常有车手较高低，赛车跑道今犹在，不见当年老司机。</em></strong></p>
-<p>最后，提醒一下广大<strong><del>司机</del></strong>朋友们，请一定一定确认是否符合商用条件。</p>
+<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
 ]]></content>
       <tags>
-        <tag>Logo</tag>
+        <tag>LifeBlog</tag>
+        <tag>Eason</tag>
       </tags>
   </entry>
 </search>
