@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>忙着生活-711全世界都在早起听Eason</title>
-    <url>/2020/07/11/BusyAndMusic/</url>
-    <content><![CDATA[<h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
-
-<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<blockquote>
-<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
-</blockquote>
-<hr>
-<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
+    <title>BottomFish</title>
+    <url>/2020/07/19/BottomFish/</url>
+    <content><![CDATA[<p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
+<p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
+<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><ul>
+<li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
+<p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后在<code>themes/butterfly/source/css/_layout/footer.styl</code>调整主题的页脚阴影透明度</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">background-color: alpha($dark-black, .1)  &#x2F;&#x2F;.5改成.1</span><br></pre></td></tr></table></figure>
+</li>
+<li><pre><code class="commonlisp">hexo clean
+hexo d -g
+hexo s</code></pre>
+<p>至此你就可以看到鱼生生不息地在你的鱼塘里翻滚啦！！！</p>
+<p>感谢木槿指导，不然我也成为不了鱼塘霸主，哈哈哈。</p>
+</li>
+</ul>
 ]]></content>
       <tags>
-        <tag>LifeBlog</tag>
+        <tag>博客美化</tag>
       </tags>
   </entry>
   <entry>
@@ -464,6 +472,57 @@
       </tags>
   </entry>
   <entry>
+    <title>忙着生活-711全世界都在早起听Eason</title>
+    <url>/2020/07/11/BusyAndMusic/</url>
+    <content><![CDATA[<h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
+
+<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<blockquote>
+<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
+</blockquote>
+<hr>
+<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
+]]></content>
+      <tags>
+        <tag>LifeBlog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>懒人一键生成世界大同的Logo</title>
+    <url>/2020/07/18/LazyLogo/</url>
+    <content><![CDATA[<p>在互联网冲浪多年的你，会不会常常为做封面、做Logo而头疼？这一次你可以真正阅后即会！</p>
+<p>以下推荐的Logo风格在我看来，或是世界大同的、或是设计精巧的、亦会是引人忍俊不禁的。</p>
+<hr>
+<h2 id="http-textcraft-net"><a href="#http-textcraft-net" class="headerlink" title="http://textcraft.net/"></a><strong><a href="http://textcraft.net/" target="_blank" rel="noopener">http://textcraft.net/</a></strong></h2><p>这是一款8-bit风格字体Logo生成器，支持定制材质、艺术字体。玩过MineCraft的你一定不会感到陌生。</p>
+<p>我想说一句，Creeper?</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/textcraft.png" alt=""></p>
+<hr>
+<h2 id="https-www-logomaker-com-cn"><a href="#https-www-logomaker-com-cn" class="headerlink" title="https://www.logomaker.com.cn/"></a><strong><a href="https://www.logomaker.com.cn/" target="_blank" rel="noopener">https://www.logomaker.com.cn/</a></strong></h2><p>这是一款大数据学习下定制Logo的网站，仅需输入名称、行业便可自动生成十几个Logo，其中包括了可直接商用的Logo。同时该网站支持个性化编辑和源文件下载，如果你钞能力十足甚至可以专属私人订制！</p>
+<blockquote>
+<p>不可避免的是，大数据也存在不完美、不人性的地方。在不充足的机器学习与Logo资源之下，这很容易导致同质化，换句话说就是大家长得好像都一样，你是李逵还是李鬼。<strong>—大数据人工智能专家 沃兹基索德</strong></p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logomaker.png" alt=""></p>
+<hr>
+<h2 id="https-www-logoko-com-cn"><a href="#https-www-logoko-com-cn" class="headerlink" title="https://www.logoko.com.cn/"></a><strong><a href="https://www.logoko.com.cn/" target="_blank" rel="noopener">https://www.logoko.com.cn/</a></strong></h2><p>相比较第二款，这款则是专注于提供素材的DIY网站。内置许多精美的字体、图片素材，可以直接下载使用。可惜美中不足的是并不支持矢量源文件的下载，只支持成品导出。</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logoko.png" alt=""></p>
+<hr>
+<h2 id="https-www-logoly-pro"><a href="#https-www-logoly-pro" class="headerlink" title="https://www.logoly.pro/"></a><strong><a href="https://www.logoly.pro/" target="_blank" rel="noopener">https://www.logoly.pro/</a></strong></h2><p>这是一个Github上很热门的开源项目。收获5.1k个Star。应该是出于快速上线的考量，采用的是Vue为主的开发。</p>
+<p>功能怎么样呢？我只能说，懂的都懂好吧！</p>
+<p>上手非常简单，这种风格的Logo只需文字、底色便可完成设计。</p>
+<p><strong>什么叫国际大同设计啊（战术后仰）</strong></p>
+<blockquote>
+<p>备注：Github是全球最大的程序员交友网站，什么？你问我P开头的，你很危险！</p>
+</blockquote>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/post3_img.png" alt=""></p>
+<p>此情此景，我想唱诗一首：<strong><em>秋名山上行人稀，常有车手较高低，赛车跑道今犹在，不见当年老司机。</em></strong></p>
+<p>最后，提醒一下广大<strong><del>司机</del></strong>朋友们，请一定一定确认是否符合商用条件。</p>
+]]></content>
+      <tags>
+        <tag>Logo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HexoBlog-十分钟建站并上线</title>
     <url>/2020/07/16/HexoBlog-OnlineInTen/</url>
     <content><![CDATA[<p>看到我的小小博客，或者看到很多大大的博客，你是不是也心动了！也想试试自己建站了呢？</p>
@@ -585,40 +644,6 @@
 ]]></content>
       <tags>
         <tag>Hexo建站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>懒人一键生成世界大同的Logo</title>
-    <url>/2020/07/18/LazyLogo/</url>
-    <content><![CDATA[<p>在互联网冲浪多年的你，会不会常常为做封面、做Logo而头疼？这一次你可以真正阅后即会！</p>
-<p>以下推荐的Logo风格在我看来，或是世界大同的、或是设计精巧的、亦会是引人忍俊不禁的。</p>
-<hr>
-<h2 id="http-textcraft-net"><a href="#http-textcraft-net" class="headerlink" title="http://textcraft.net/"></a><strong><a href="http://textcraft.net/" target="_blank" rel="noopener">http://textcraft.net/</a></strong></h2><p>这是一款8-bit风格字体Logo生成器，支持定制材质、艺术字体。玩过MineCraft的你一定不会感到陌生。</p>
-<p>我想说一句，Creeper?</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/textcraft.png" alt=""></p>
-<hr>
-<h2 id="https-www-logomaker-com-cn"><a href="#https-www-logomaker-com-cn" class="headerlink" title="https://www.logomaker.com.cn/"></a><strong><a href="https://www.logomaker.com.cn/" target="_blank" rel="noopener">https://www.logomaker.com.cn/</a></strong></h2><p>这是一款大数据学习下定制Logo的网站，仅需输入名称、行业便可自动生成十几个Logo，其中包括了可直接商用的Logo。同时该网站支持个性化编辑和源文件下载，如果你钞能力十足甚至可以专属私人订制！</p>
-<blockquote>
-<p>不可避免的是，大数据也存在不完美、不人性的地方。在不充足的机器学习与Logo资源之下，这很容易导致同质化，换句话说就是大家长得好像都一样，你是李逵还是李鬼。<strong>—大数据人工智能专家 沃兹基索德</strong></p>
-</blockquote>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logomaker.png" alt=""></p>
-<hr>
-<h2 id="https-www-logoko-com-cn"><a href="#https-www-logoko-com-cn" class="headerlink" title="https://www.logoko.com.cn/"></a><strong><a href="https://www.logoko.com.cn/" target="_blank" rel="noopener">https://www.logoko.com.cn/</a></strong></h2><p>相比较第二款，这款则是专注于提供素材的DIY网站。内置许多精美的字体、图片素材，可以直接下载使用。可惜美中不足的是并不支持矢量源文件的下载，只支持成品导出。</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/logoko.png" alt=""></p>
-<hr>
-<h2 id="https-www-logoly-pro"><a href="#https-www-logoly-pro" class="headerlink" title="https://www.logoly.pro/"></a><strong><a href="https://www.logoly.pro/" target="_blank" rel="noopener">https://www.logoly.pro/</a></strong></h2><p>这是一个Github上很热门的开源项目。收获5.1k个Star。应该是出于快速上线的考量，采用的是Vue为主的开发。</p>
-<p>功能怎么样呢？我只能说，懂的都懂好吧！</p>
-<p>上手非常简单，这种风格的Logo只需文字、底色便可完成设计。</p>
-<p><strong>什么叫国际大同设计啊（战术后仰）</strong></p>
-<blockquote>
-<p>备注：Github是全球最大的程序员交友网站，什么？你问我P开头的，你很危险！</p>
-</blockquote>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/post3_img.png" alt=""></p>
-<p>此情此景，我想唱诗一首：<strong><em>秋名山上行人稀，常有车手较高低，赛车跑道今犹在，不见当年老司机。</em></strong></p>
-<p>最后，提醒一下广大<strong><del>司机</del></strong>朋友们，请一定一定确认是否符合商用条件。</p>
-]]></content>
-      <tags>
-        <tag>Logo</tag>
       </tags>
   </entry>
 </search>
