@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-ovCgDmJC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-MNhhZopQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ovCgDmJC"),
+            element: document.getElementById("aplayer-MNhhZopQ"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -95,9 +95,9 @@
 <h2 id="向MagiBlockchain添加数字签名"><a href="#向MagiBlockchain添加数字签名" class="headerlink" title="向MagiBlockchain添加数字签名"></a>向MagiBlockchain添加数字签名</h2><p>To Be Done</p>
 ]]></content>
       <tags>
+        <tag>Java</tag>
         <tag>Blockchain</tag>
         <tag>区块链</tag>
-        <tag>Java</tag>
         <tag>Python</tag>
       </tags>
   </entry>
