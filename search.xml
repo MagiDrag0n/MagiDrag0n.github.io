@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-gdyglIKE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-cBEHIeFO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-gdyglIKE"),
+            element: document.getElementById("aplayer-cBEHIeFO"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -646,11 +646,11 @@ hexo s</code></pre>
 </ul>
 <ul>
 <li><h3 id="安装Git推送套件："><a href="#安装Git推送套件：" class="headerlink" title="安装Git推送套件："></a>安装Git推送套件：</h3><p>在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br><span class="line">  cnpm install --save hexo-deployer-git （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
+
 
 </li>
 </ul>
-<p>cnpm install –save hexo-deployer-git （调整了镜像输入这个）</p>
 <p>  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</p>
 <hr>
 <h1 id="Hexo本地建站"><a href="#Hexo本地建站" class="headerlink" title="Hexo本地建站"></a>Hexo本地建站</h1><ul>
