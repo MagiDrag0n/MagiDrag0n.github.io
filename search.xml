@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-MNhhZopQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-gdyglIKE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-MNhhZopQ"),
+            element: document.getElementById("aplayer-gdyglIKE"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -650,7 +650,42 @@ hexo s</code></pre>
 
 </li>
 </ul>
-<p>cnpm install –save hexo-deployer-git （调整了镜像输入这个）<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Hexo本地建站</span><br><span class="line"></span><br><span class="line">- ### 快速开始：</span><br><span class="line"></span><br><span class="line">  在命令行中输入：</span><br><span class="line"></span><br><span class="line">  &#96;hexo init&#96;</span><br><span class="line"></span><br><span class="line">  此步骤会自动克隆一个Landscape的主题博客</span><br><span class="line"></span><br><span class="line">  并且你将在你的博客目录下看到自动生成的文件</span><br><span class="line"></span><br><span class="line">- ### 启动本地博客服务器：</span><br><span class="line"></span><br><span class="line">  在命令行中输入：</span><br><span class="line"></span><br><span class="line">  &#96;hexo s&#96;</span><br><span class="line"></span><br><span class="line">  将会提示你：</span><br><span class="line"></span><br><span class="line">  &#96;INFO  Start processing.&#96;</span><br><span class="line">  &#96;INFO  Hexo is running at http:&#x2F;&#x2F;localhost:4000.Press Ctrl+C to stop.&#96;</span><br><span class="line"></span><br><span class="line">  此时在浏览器中输入 http:&#x2F;&#x2F;localhost:4000 便可查看你的博客！</span><br><span class="line"></span><br><span class="line">  其中的博文便包含了一些简易的操作指令与讲解</span><br><span class="line"></span><br><span class="line">  **恭喜！你已经迈出了令人愉快的第一步！**</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Hexo的Github上线</span><br><span class="line"></span><br><span class="line">我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站[Github](https:&#x2F;&#x2F;github.com)提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</span><br><span class="line"></span><br><span class="line">- ### Github账户创建一个项目</span><br><span class="line"></span><br><span class="line">  使用你刚才创建的Github账户，在主页右上角找到新建项目**New repository**</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide1.png)</span><br><span class="line"></span><br><span class="line">  并建立一个与你名称相同前缀的项目名**(YourName.github.io)**</span><br><span class="line"></span><br><span class="line">  此处因为我已经创建过所以不能重复创建，你可直接点**Create repository**</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide2.png)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">- ### 配置Git推送套件</span><br><span class="line"></span><br><span class="line">  打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</span><br><span class="line"></span><br><span class="line">  ![](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;MagiDrag0n&#x2F;PicBed&#x2F;img&#x2F;guide3.png)</span><br><span class="line"></span><br><span class="line">  在代码末尾添加：</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;yaml</span><br><span class="line">deploy:</span><br><span class="line">  	type: &#39;git&#39;</span><br><span class="line">	repo: &quot;https:&#x2F;&#x2F;github.com&#x2F;你的名字&#x2F;你的名字.github.io.git&quot;</span><br><span class="line">  	branch: &quot;master&quot;</span><br></pre></td></tr></table></figure></p>
+<p>cnpm install –save hexo-deployer-git （调整了镜像输入这个）</p>
+<p>  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</p>
+<hr>
+<h1 id="Hexo本地建站"><a href="#Hexo本地建站" class="headerlink" title="Hexo本地建站"></a>Hexo本地建站</h1><ul>
+<li><h3 id="快速开始："><a href="#快速开始：" class="headerlink" title="快速开始："></a>快速开始：</h3><p>在命令行中输入：</p>
+<p><code>hexo init</code></p>
+<p>此步骤会自动克隆一个Landscape的主题博客</p>
+<p>并且你将在你的博客目录下看到自动生成的文件</p>
+</li>
+<li><h3 id="启动本地博客服务器："><a href="#启动本地博客服务器：" class="headerlink" title="启动本地博客服务器："></a>启动本地博客服务器：</h3><p>在命令行中输入：</p>
+<p><code>hexo s</code></p>
+<p>将会提示你：</p>
+<p><code>INFO  Start processing.</code><br><code>INFO  Hexo is running at http://localhost:4000.Press Ctrl+C to stop.</code></p>
+<p>此时在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可查看你的博客！</p>
+<p>其中的博文便包含了一些简易的操作指令与讲解</p>
+<p><strong>恭喜！你已经迈出了令人愉快的第一步！</strong></p>
+</li>
+</ul>
+<hr>
+<h1 id="Hexo的Github上线"><a href="#Hexo的Github上线" class="headerlink" title="Hexo的Github上线"></a>Hexo的Github上线</h1><p>我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站<a href="https://github.com" target="_blank" rel="noopener">Github</a>提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</p>
+<ul>
+<li><h3 id="Github账户创建一个项目"><a href="#Github账户创建一个项目" class="headerlink" title="Github账户创建一个项目"></a>Github账户创建一个项目</h3><p>使用你刚才创建的Github账户，在主页右上角找到新建项目<strong>New repository</strong></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide1.png" alt=""></p>
+<p>并建立一个与你名称相同前缀的项目名<strong>(YourName.github.io)</strong></p>
+<p>此处因为我已经创建过所以不能重复创建，你可直接点<strong>Create repository</strong></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide2.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><h3 id="配置Git推送套件"><a href="#配置Git推送套件" class="headerlink" title="配置Git推送套件"></a>配置Git推送套件</h3><p>打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide3.png" alt=""></p>
+<p>在代码末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  	<span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">	<span class="attr">repo:</span> <span class="string">"https://github.com/你的名字/你的名字.github.io.git"</span></span><br><span class="line">  	<span class="attr">branch:</span> <span class="string">"master"</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
 <p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide4.png" alt=""></p>
 <p>至此Git推送套件已准备就绪</p>
 <ul>
