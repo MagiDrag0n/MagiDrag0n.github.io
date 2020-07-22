@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-KwLOMCiC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-xiVPrEQM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-KwLOMCiC"),
+            element: document.getElementById("aplayer-xiVPrEQM"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -86,13 +86,67 @@
 <p>即基于<strong>总体</strong>算力决定验算工作量大小，基于<strong>总体</strong>互信控制数据唯一、安全。</p>
 </li>
 </ul>
-<h2 id="比特币是如何产生的"><a href="#比特币是如何产生的" class="headerlink" title="比特币是如何产生的"></a>比特币是如何产生的</h2><p>To Be Done</p>
-<h2 id="简单区块链的实现"><a href="#简单区块链的实现" class="headerlink" title="简单区块链的实现"></a>简单区块链的实现</h2><p>To Be Done</p>
-<h2 id="工作量证明机制-POW"><a href="#工作量证明机制-POW" class="headerlink" title="工作量证明机制(POW)"></a>工作量证明机制(POW)</h2><p>工作量证明机制(Proof of Work)</p>
-<p>To Be Done</p>
+<h2 id="比特币是如何产生的"><a href="#比特币是如何产生的" class="headerlink" title="比特币是如何产生的"></a>比特币是如何产生的</h2><h3 id="货币的产生"><a href="#货币的产生" class="headerlink" title="货币的产生"></a>货币的产生</h3><p>古时候，人类用的贝类、石头当做交换物品的媒介；商周及汉代以来，中国出现了铜贝、盘缠、银两等货币。现代社会中的主权国家都发行本国货币用以物物交换、体现使用价值。货币体现的作用主要有：价值尺度、流通手段、支付手段、贮藏手段和世界货币。</p>
+<p>我们为什么信任并使用发行货币呢？这是我们对发行者信用的认可；相信货币关联的价值，相信其流通能力。</p>
+<h3 id="比特币的产生"><a href="#比特币的产生" class="headerlink" title="比特币的产生"></a>比特币的产生</h3><blockquote>
+<p>这是我的理解，不保证完全正确！</p>
+</blockquote>
+<p>我是中国人，想和一个美国人进行交易；我们可以通过人民币兑换美元的方式来进行交易。但比特币的出现，使得资金注入后，获得一个安全的交易窗口成为可能。因为比特币是没有中央银行的，这是一个去中心化的货币，我们通过比特币来进行交易，其内在价值要首先认识到区块链用于记录转账信息，比特币才被赋予了价值，比特币的价值是我们赋予的。因为发生了价值的关联，所以比特币有了一定流通的条件；即大家认可，大家使用。</p>
+<h3 id="转账信息的记录内容"><a href="#转账信息的记录内容" class="headerlink" title="转账信息的记录内容"></a>转账信息的记录内容</h3><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">//区块头</span></span><br><span class="line"><span class="attr">preBlock</span>: <span class="string">//计算方法： 前一个区块的区块头进行二次SHA-256运算后的哈希值</span></span><br><span class="line"><span class="attr">mrkl_root</span>: <span class="string">//默克尔树树根所取得的哈希值</span></span><br><span class="line"><span class="attr">nextBlock</span>: <span class="string">[]</span></span><br><span class="line"><span class="attr">timestamp</span>: <span class="string">//UNIX时间戳</span></span><br><span class="line"><span class="attr">bits</span>: <span class="string">//难度值</span></span><br><span class="line"><span class="attr">nonce</span>: <span class="string">//用以完成难度值计算的随机数</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">//区块主体</span></span><br><span class="line"><span class="attr">num_Transaction</span>: <span class="string">100 //交易数量</span></span><br><span class="line"><span class="attr">main_chain</span>: <span class="string">true,false //是否为主链，最长链原则</span></span><br><span class="line"><span class="attr">block_index</span>: <span class="string"></span></span><br><span class="line"><span class="attr">height</span>: <span class="string"></span></span><br><span class="line"><span class="attr">weight</span>: <span class="string"></span></span><br><span class="line"><span class="attr">pool_difficulty</span>: <span class="string"></span></span><br><span class="line"><span class="attr">difficulty</span>: <span class="string"></span></span><br><span class="line"><span class="attr">reward_block</span>: <span class="string"></span></span><br><span class="line"><span class="attr">reward_fees</span>: <span class="string"></span></span><br><span class="line"><span class="attr">created_at</span>: <span class="string">//区块创造时间戳</span></span><br><span class="line"><span class="attr">confirmations</span>: <span class="string"></span></span><br><span class="line"><span class="attr">is_orphan</span>: <span class="string">//是否为孤区块</span></span><br><span class="line"><span class="attr">info</span>:<span class="string">&#123; //交易详情 &#125;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>preBlock、nextBlock，区块头计算哈希值，都体现了区块链的连续、数据安全的特点</li>
+<li>merkle树则出于多次唯一性验证以及中本聪的简化支付验证的思想</li>
+</ul>
+<h3 id="Merkle树-与-简化支付验证协议-SPV"><a href="#Merkle树-与-简化支付验证协议-SPV" class="headerlink" title="Merkle树 与 简化支付验证协议(SPV)"></a>Merkle树 与 简化支付验证协议(SPV)</h3><p>如果你想确认一笔交易的唯一性、有效性，有一种方法便是查找与这笔交易相关的所有交易。如：</p>
+<table>
+<thead>
+<tr>
+<th align="center">时间</th>
+<th align="center">转账人信息</th>
+<th align="center">转账金额</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">2008-10-31</td>
+<td align="center">中本聪 转账给 MagiDragon</td>
+<td align="center">100 BTC</td>
+</tr>
+<tr>
+<td align="center">2011-11-11</td>
+<td align="center">MagiDragon 转账给 阿里淘宝</td>
+<td align="center">10 BTC</td>
+</tr>
+<tr>
+<td align="center">2020-05-20</td>
+<td align="center">MagiDragon 转账给 MagiBlockchain</td>
+<td align="center">90 BTC</td>
+</tr>
+</tbody></table>
+<p>我们为了保证发生于2020年5月20日的交易是真实有效的，就得找到这笔交易之前发生全部交易，即遍历交易历史。但是如今转账信息爆发式膨胀，想让所有处于区块链成员在每笔交易发生后都去遍历验证所有交易的真实有效，是不合理的，因为这会使得需要下载验证的数据过于庞大。比如2019年的双11购物节当天发生的订单信息存储进区块链当中，就可能需要几百G的硬盘空间，这再次分发到区块链成员去下载验证，这是不小的网络负担和存储负担。Merkle(下文简称默克尔)树树根验证机制，便被中本聪创造性的应用了。</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/merklebranch.jpg" alt=""></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Hash_Tree.png" alt=""></p>
+<p>由示意图可以看到，默克尔树是一种二叉树，由一个根节点，一对中间节点以及一对叶子节点组成。记录具体交易信息的是叶子节点，中间节点则负责记录两个孩子节点（叶子节点）内容的哈希值，进一步地，根节点也是由两个孩子节点（中间节点）内容的哈希值组成。而为什么默克尔树树根验证机制可信呢？这是因为，我们只需要计算第一层根的哈希值，便可校对不同分支的完整、统一性了！</p>
+<ul>
+<li>快速校对。两个成员间校对区块链完整、统一，只需进行一次默克尔树根验证。</li>
+<li>变化可知。当任何一个叶子节点发生改变，其默克尔树根哈希值必然改变。</li>
+</ul>
+<h3 id="Merkle树-的容积问题"><a href="#Merkle树-的容积问题" class="headerlink" title="Merkle树 的容积问题"></a>Merkle树 的容积问题</h3><p>我们再回看一次这个区块头的内容：</p>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">//区块头</span></span><br><span class="line"><span class="attr">preBlock</span>: <span class="string">//计算方法： 前一个区块的区块头进行二次SHA-256运算后的哈希值</span></span><br><span class="line"><span class="attr">mrkl_root</span>: <span class="string">//默克尔树树根所取得的哈希值</span></span><br><span class="line"><span class="attr">nextBlock</span>: <span class="string">[]</span></span><br><span class="line"><span class="attr">timestamp</span>: <span class="string">//UNIX时间戳</span></span><br><span class="line"><span class="attr">bits</span>: <span class="string">//难度值</span></span><br><span class="line"><span class="attr">nonce</span>: <span class="string">//用以完成难度值计算的随机数</span></span><br></pre></td></tr></table></figure>
+
+<p>我们每次只需要验证默克尔树根的哈希值便可确认这个区块是这个区块。而不用完全读取整个区块的内容，进一步优化了网络、存储的负担。</p>
+<p>由上一论述的图中可见的，每个叶子节点（最下层节点）均可成为下下层节点的父母节点，相应的，只需扩展一层，整个默克尔树的数据容量便升级了一倍。一个区块当中记录的交易转账信息大约在3000笔左右，而一个区块计算出来的默克尔树通常不超过20层，当层数为32层时承载量为40亿笔，而层数打到48层时，承载量高达10^14量级（百万亿）。</p>
+<blockquote>
+<p>现有的 Visa 信用卡网络每天在全球范围内处理约 1500 万笔互联网交易。比特币仅用现有的硬件就已经可以达到更大规模，而且成本只是信用卡交易的一小部分。比特币从未真正达到规模上限。 ——中本聪</p>
+</blockquote>
+<h2 id="工作量证明机制-POW"><a href="#工作量证明机制-POW" class="headerlink" title="工作量证明机制(POW)"></a>工作量证明机制(POW)</h2><p>工作量证明机制(Proof of Work)。在比特币当中</p>
 <h2 id="POW的整合"><a href="#POW的整合" class="headerlink" title="POW的整合"></a>POW的整合</h2><p>To Be Done</p>
+<h2 id="简单区块链的实现"><a href="#简单区块链的实现" class="headerlink" title="简单区块链的实现"></a>简单区块链的实现</h2><p>To Be Done</p>
 <h2 id="比特币中的数字签名"><a href="#比特币中的数字签名" class="headerlink" title="比特币中的数字签名"></a>比特币中的数字签名</h2><p>To Be Done</p>
 <h2 id="向MagiBlockchain添加数字签名"><a href="#向MagiBlockchain添加数字签名" class="headerlink" title="向MagiBlockchain添加数字签名"></a>向MagiBlockchain添加数字签名</h2><p>To Be Done</p>
+<p>我非常不认可炒货币的行为，这是在干扰这个体系的运行稳定（在我看来）。</p>
 ]]></content>
       <tags>
         <tag>Java</tag>
