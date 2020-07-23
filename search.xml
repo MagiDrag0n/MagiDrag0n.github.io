@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-nWBKDEHV" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-KcPKnNbi" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-nWBKDEHV"),
+            element: document.getElementById("aplayer-KcPKnNbi"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -141,12 +141,60 @@
 <blockquote>
 <p>现有的 Visa 信用卡网络每天在全球范围内处理约 1500 万笔互联网交易。比特币仅用现有的硬件就已经可以达到更大规模，而且成本只是信用卡交易的一小部分。比特币从未真正达到规模上限。 ——中本聪</p>
 </blockquote>
-<h2 id="工作量证明机制-POW"><a href="#工作量证明机制-POW" class="headerlink" title="工作量证明机制(POW)"></a>工作量证明机制(POW)</h2><p>工作量证明机制(Proof of Work)。在比特币当中</p>
+<h2 id="工作量证明机制-POW"><a href="#工作量证明机制-POW" class="headerlink" title="工作量证明机制(POW)"></a>工作量证明机制(POW)</h2><h3 id="概念引入-F-x-Y"><a href="#概念引入-F-x-Y" class="headerlink" title="概念引入 F(x) = Y"></a>概念引入 F(x) = Y</h3><p>现在我提供一个函数 ，并提供几个供你测试的 x = (1, 2, 3, 4, 5)，<br>$$<br>F(x)=x^3+x^2+x<br>$$<br>你当然可以非常容易的得到对应的 Y 值。可如果是这样呢？<br>$$<br>x = ? + ? +…+?<br>$$<br>要使得 x = (1, 2, 3, 4, 5) 均能满足你所求出的函数，这是非常不容易的。</p>
+<h3 id="工作效率问题"><a href="#工作效率问题" class="headerlink" title="工作效率问题"></a>工作效率问题</h3><p>小学生学习乘除法数学的时候，经常会拿工人建房子来作比喻。如：一个工人一天可以建造一间小木屋，或者两个工人一天可以建造三个小木屋，十个工人一天最多可以建造多少间小木屋？这让小学时候的我迷惑不已，1-&gt;1，2-&gt;3，那么3-&gt;?，4-&gt;?，…，10-&gt;?。这个齐心协力建房子的问题，在现实中当然不能实现，但是在计算机网络中是可以实现的，当一群“矿工”组成一个算力群体的时候，他们所拥有的的算力在整体上相当惊人，如果不对我们的“问题”进行适当的难度调整，势必让利益向他们这种群体倾斜。</p>
+<h3 id="SHA-256"><a href="#SHA-256" class="headerlink" title="SHA-256"></a>SHA-256</h3><p>SHA-256算法是目前被认为最安全的哈希函数之一。SHA-256算法单向Hash函数是密码学和信息安全领域中的一个非常重要的基本算法，它是把任意长的消息转化为较短的、固定长度的消息摘要的算法。不做过多阐述，下面在Python中引入hashlib进行SHA-256运算，来说明逆向运算的复杂程度。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sha256</span><span class="params">(data)</span>:</span></span><br><span class="line">    sha256 = hashlib.sha256()</span><br><span class="line">    sha256.update(data.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">    <span class="keyword">return</span> sha256.hexdigest()</span><br><span class="line"></span><br><span class="line">print(sha256(<span class="string">'Magi'</span>))</span><br><span class="line"><span class="comment">## dc578697cb21042e00056509d66dc432403e2183518f567503868e7d9af8da16</span></span><br><span class="line">print(sha256(<span class="string">'Blockchain'</span>))</span><br><span class="line"><span class="comment">## 625da44e4eaf58d61cf048d168aa6f5e492dea166d8bb54ec06c30de07db57e1</span></span><br><span class="line">print(sha256(<span class="string">'MagiBlockchain'</span>))</span><br><span class="line"><span class="comment">## 7336d46dcbce0ce6353e9a83186a3450e80b2cb04b4a556623fa45d1792868eb</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 字符串间的组合，重新计算出来的哈希值并不是线性关系。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 请问你能告诉我下面这段SHA-256值意义是什么吗？</span></span><br><span class="line">d214cb348932f8e17a4b909aa5bc31d042369669ea9c1d1fbb80d06bf7370c0d == ??</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="JS-POW难度验证"><a href="#JS-POW难度验证" class="headerlink" title="JS - POW难度验证"></a>JS - POW难度验证</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">proofOfWork</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> data = <span class="string">"MagiBlockchain"</span>;</span><br><span class="line">  <span class="keyword">let</span> x = <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// 产生伪随机数x</span></span><br><span class="line">  <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      sha256(data + x)</span><br><span class="line">        .toString()</span><br><span class="line">        <span class="comment">// 复合字符串计算哈希值</span></span><br><span class="line">        <span class="comment">// 通过调整字符串长度来控制难度</span></span><br><span class="line">        .substring(<span class="number">0</span>, <span class="number">1</span>) !== <span class="string">"0"</span></span><br><span class="line">    ) &#123;</span><br><span class="line">      x = x + <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(sha256(data + x).toString());</span><br><span class="line">      <span class="built_in">console</span>.log(x);</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">proofOfWork();</span><br><span class="line"><span class="comment">// 运行POW验证</span></span><br></pre></td></tr></table></figure>
+
+<p>在计算机瞬间的计算次数大约是千万次的。面对1-5位的难度控制，甚至不需要考虑成本；而上十位、数十位的难度控制更加理想。上面代码运行次数（仅供参考）：</p>
+<table>
+<thead>
+<tr>
+<th align="center">原数据</th>
+<th align="center">目标字符串位数</th>
+<th align="center">计算次数 ，计算时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Magi + x</td>
+<td align="center">1</td>
+<td align="center">8，瞬间</td>
+</tr>
+<tr>
+<td align="center">Magi + x</td>
+<td align="center">4</td>
+<td align="center">19469，3秒左右</td>
+</tr>
+<tr>
+<td align="center">Magi + x</td>
+<td align="center">8</td>
+<td align="center">？</td>
+</tr>
+</tbody></table>
+<p>当难度控制在8位的时候，我的电脑配置（AMD-3700X@8C16T 4.3Ghz）已经不足以在数分钟内解出这个问题了。我并没有对此满足，因为我只是作为单一算力主体在计算这个问题，这个难度尽管已经很大，但不够大。如比特币在2020年的难度控制是接近77位了，如何理解呢？在哈希值取0和1的情况下，获得一个正确答案的机会大约是<br>$$<br>Chance = \frac{1}{2^n} (n=77)<br>$$</p>
+<p>$$<br>Chance ≈ \frac{1}{151000000000000000000000}（1510万亿亿分之一）<br>$$</p>
+<p>以我国当前最先进的超级计算机，神威太湖之光的峰值12.54亿亿次每秒的计算能力来比较，大约是需要<br>$$<br>1204147 秒 = 20069分钟 = 335小时 =14天<br>$$</p>
+<p>$$<br>1204147 seconds = 20069minutes = 335hours =14days<br>$$</p>
+<p>虽然算起来十分困难，但是只要你算出来这个随机数x，整个网络可以在瞬间验证你的随机数x是否有效，若通过广播验证，便将这个区块加入区块链。</p>
 <h2 id="POW的整合"><a href="#POW的整合" class="headerlink" title="POW的整合"></a>POW的整合</h2><p>To Be Done</p>
-<h2 id="简单区块链的实现"><a href="#简单区块链的实现" class="headerlink" title="简单区块链的实现"></a>简单区块链的实现</h2><p>To Be Done</p>
+<h2 id="简单区块链的实现"><a href="#简单区块链的实现" class="headerlink" title="简单区块链的实现"></a>简单区块链的实现</h2><p>@heroyf 的 Python实现区块链事项</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sha256</span><span class="params">(dataNeedSha)</span>:</span></span><br><span class="line">    sha256 = hashlib.sha256()</span><br><span class="line">    sha256.update(dataNeedSha.encode(<span class="string">'utf-8'</span>))</span><br><span class="line">    <span class="keyword">return</span> sha256.hexdigest()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 区块</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Block</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, data, previousHash)</span>:</span></span><br><span class="line">        self.data = data</span><br><span class="line">        self.previousHash = previousHash</span><br><span class="line">        self.hash = self.ComputeHash</span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">ComputeHash</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> str(sha256(self.data))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">showBlock</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> (&#123;<span class="string">'data'</span>:self.data, <span class="string">'previousHash'</span>: self.previousHash, <span class="string">'hash'</span>: self.hash&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 链</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chain</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.chain = [self.ancestorBlock]</span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">ancestorBlock</span><span class="params">(self)</span>:</span></span><br><span class="line">        ancestor_block = Block(<span class="string">'祖先区块'</span>, <span class="string">''</span>)</span><br><span class="line">        <span class="keyword">return</span> ancestor_block</span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getLatestBlock</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.chain[len(self.chain) - <span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">addBlockToChain</span><span class="params">(self, newBlock)</span>:</span></span><br><span class="line">        newBlock.previousHash = self.getLatestBlock.hash</span><br><span class="line">        newBlock.hash = newBlock.ComputeHash</span><br><span class="line">        self.chain.append(newBlock)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">showChain</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> self.chain:</span><br><span class="line">            i.showBlock()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validateChain</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(self.chain) == <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">if</span> self.chain[<span class="number">0</span>].hash != self.chain[<span class="number">0</span>].ComputeHash:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,len(self.chain)):</span><br><span class="line">            blockToValidate = self.chain[i]</span><br><span class="line">            <span class="keyword">if</span> (blockToValidate.hash) != blockToValidate.ComputeHash:</span><br><span class="line">                print(<span class="string">'数据被篡改'</span>)</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">            previousBlock = self.chain[i<span class="number">-1</span>]</span><br><span class="line">            <span class="keyword">if</span> blockToValidate.previousHash != previousBlock.hash:</span><br><span class="line">                print(<span class="string">'前后区块链接断裂'</span>)</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">block1 = Block(<span class="string">'转账10'</span>, <span class="string">''</span>)</span><br><span class="line">block2 = Block(<span class="string">'转账20'</span>, <span class="string">''</span>)</span><br><span class="line">bitChain = Chain()</span><br><span class="line">bitChain.addBlockToChain(block1)</span><br><span class="line">bitChain.addBlockToChain(block2)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 尝试篡改区块</span></span><br><span class="line">bitChain.chain[<span class="number">1</span>].data = <span class="string">'转账500'</span></span><br><span class="line"><span class="comment"># 尝试修正hash</span></span><br><span class="line">bitChain.chain[<span class="number">1</span>].hash = bitChain.chain[<span class="number">1</span>].ComputeHash</span><br><span class="line">bitChain.showChain()</span><br><span class="line">print(bitChain.validateChain())</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="比特币中的数字签名"><a href="#比特币中的数字签名" class="headerlink" title="比特币中的数字签名"></a>比特币中的数字签名</h2><p>To Be Done</p>
 <h2 id="向MagiBlockchain添加数字签名"><a href="#向MagiBlockchain添加数字签名" class="headerlink" title="向MagiBlockchain添加数字签名"></a>向MagiBlockchain添加数字签名</h2><p>To Be Done</p>
-<p>我非常不认可炒货币的行为，这是在干扰这个体系的运行稳定（在我看来）。</p>
+<p>// TODO\IDEA LIST</p>
+<p>// 我非常不认可炒货币的行为，这是在干扰这个体系的运行稳定（在我看来）。</p>
+<p>// 51%算力攻击，用户参与度。</p>
+<p>// 国家参与控制20%算力，赋予信心</p>
+<p>// 币发行量由世界存储容量相关并由一定算法控制</p>
+<p>// 区块链，区块网</p>
+<p>// 由信息存储方投入资金，区块产生的币由矿工持有，实现价值传递</p>
 ]]></content>
       <tags>
         <tag>Java</tag>
