@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-AuUAzxzO" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-TJxjWcgM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-AuUAzxzO"),
+            element: document.getElementById("aplayer-TJxjWcgM"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -196,9 +196,9 @@
 <p>// 由信息存储方投入资金，区块产生的币由矿工持有，实现价值传递</p>
 ]]></content>
       <tags>
-        <tag>Java</tag>
         <tag>Blockchain</tag>
         <tag>区块链</tag>
+        <tag>Java</tag>
         <tag>Python</tag>
       </tags>
   </entry>
