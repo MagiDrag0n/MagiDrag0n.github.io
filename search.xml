@@ -14,12 +14,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-jCOYHKlS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-NvEQfmcD" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-jCOYHKlS"),
+            element: document.getElementById("aplayer-NvEQfmcD"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -192,13 +192,13 @@
 <p>// 51%算力攻击，用户参与度。</p>
 <p>// 国家参与控制20%算力，赋予信心</p>
 <p>// 币发行量由世界存储容量相关并由一定算法控制</p>
-<p>// 区块链，区块网</p>
+<p>// 区块链、区块网</p>
 <p>// 由信息存储方投入资金，区块产生的币由矿工持有，实现价值传递</p>
 ]]></content>
       <tags>
+        <tag>Java</tag>
         <tag>Blockchain</tag>
         <tag>区块链</tag>
-        <tag>Java</tag>
         <tag>Python</tag>
       </tags>
   </entry>
