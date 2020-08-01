@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何成为比奇堡公敌</title>
+    <url>/2020/07/19/BottomFish/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
+<p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
+<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><p>源码已全部打包上传CDN，只需在配置文件引导即可调用。</p>
+<ul>
+<li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
+<p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后在<code>themes/butterfly/source/css/_layout/footer.styl</code>调整主题的页脚阴影透明度</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">background-color: alpha($dark-black, .1)  &#x2F;&#x2F;.5改成.1</span><br></pre></td></tr></table></figure>
+</li>
+<li><pre><code class="commonlisp">hexo clean
+hexo d -g
+hexo s</code></pre>
+<p>至此你就可以看到鱼生生不息地在你的鱼塘里翻滚啦！！！</p>
+<p>感谢木槿指导，不然我也成为不了鱼塘霸主，哈哈哈。</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>博客美化</tag>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>711全世界都在早起听Eason</title>
+    <url>/2020/07/11/BusyAndMusic/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
+
+<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<blockquote>
+<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
+</blockquote>
+<hr>
+<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
+]]></content>
+      <tags>
+        <tag>LifeBlog</tag>
+        <tag>Eason</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>十分钟建站并上线</title>
+    <url>/2020/07/16/HexoBlog-OnlineInTen/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看到我的小小博客，或者看到很多大大的博客，你是不是也心动了！也想试试自己建站了呢？</p>
+<p>Very Easy！和我一起利用十分钟建立属于你的网站并上线吧！</p>
+<hr>
+<h1 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h1><ul>
+<li>Github 账号 x1</li>
+<li>cmd, nodejs, npm, git</li>
+</ul>
+<hr>
+<h1 id="前期环境准备"><a href="#前期环境准备" class="headerlink" title="前期环境准备"></a>前期环境准备</h1><ul>
+<li><h3 id="Github-账号的注册："><a href="#Github-账号的注册：" class="headerlink" title="Github 账号的注册："></a>Github 账号的注册：</h3><p>进入<a href="https://github.com/" target="_blank" rel="noopener">Github(点击跳转)</a>并注册一个账号</p>
+</li>
+<li><h3 id="命令行功能检查："><a href="#命令行功能检查：" class="headerlink" title="命令行功能检查："></a>命令行功能检查：</h3><p>Windows键 + R键，在打开的窗口输入<code>cmd</code>并回车，打开的应用便是命令行</p>
+</li>
+<li><h3 id="安装-node-js与检查npm包管理器-："><a href="#安装-node-js与检查npm包管理器-：" class="headerlink" title="安装 node.js与检查npm包管理器 ："></a>安装 node.js与检查npm包管理器 ：</h3><p>进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs官网(点击跳转)</a>下载最新的长期支持版（LTS）并安装</p>
+<p>安装完毕后在命令行中输入 <code>node -v</code>，检查是否成功安装</p>
+<p>在命令行中输入npm -v，检查npm包管理器是否存在</p>
+</li>
+<li><h3 id="非必需-将npm包管理器调整到国内镜像："><a href="#非必需-将npm包管理器调整到国内镜像：" class="headerlink" title="(非必需)将npm包管理器调整到国内镜像："></a>(非必需)将npm包管理器调整到国内镜像：</h3><p>由于npm服务器位于国外，部分用户可能网络体验较差</p>
+<p>国内有清华大学镜像以及阿里淘宝镜像两个优质线路可选</p>
+<p>下面我们选择调整为阿里淘宝镜像</p>
+<p>在命令行中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>并等待完成，完成后输入<code>cnpm -v</code>检查是否成功安装</p>
+</li>
+<li><h3 id="安装hexo博客框架："><a href="#安装hexo博客框架：" class="headerlink" title="安装hexo博客框架："></a>安装hexo博客框架：</h3><p>首先将命令行当前文件夹切换到一个新的空文件夹(不建议中文)当中</p>
+<p>然后在命令行中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli  （未调整镜像输入这个）</span><br><span class="line"></span><br><span class="line">cnpm install -g hexo-cl  （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
+
+<p>进度跑完以后，输入<code>hexo -v</code>检查是否安装成功</p>
+<p><u><strong>后文若未特别说明，均默认命令行处于当前文件夹中操作</strong></u></p>
+</li>
+</ul>
+<ul>
+<li><h3 id="安装Git推送套件："><a href="#安装Git推送套件：" class="headerlink" title="安装Git推送套件："></a>安装Git推送套件：</h3><p>在命令行中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br><span class="line">  cnpm install --save hexo-deployer-git （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<p>  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</p>
+<hr>
+<h1 id="Hexo本地建站"><a href="#Hexo本地建站" class="headerlink" title="Hexo本地建站"></a>Hexo本地建站</h1><ul>
+<li><h3 id="快速开始："><a href="#快速开始：" class="headerlink" title="快速开始："></a>快速开始：</h3><p>在命令行中输入：</p>
+<p><code>hexo init</code></p>
+<p>此步骤会自动克隆一个Landscape的主题博客</p>
+<p>并且你将在你的博客目录下看到自动生成的文件</p>
+</li>
+<li><h3 id="启动本地博客服务器："><a href="#启动本地博客服务器：" class="headerlink" title="启动本地博客服务器："></a>启动本地博客服务器：</h3><p>在命令行中输入：</p>
+<p><code>hexo s</code></p>
+<p>将会提示你：</p>
+<p><code>INFO  Start processing.</code><br><code>INFO  Hexo is running at http://localhost:4000.Press Ctrl+C to stop.</code></p>
+<p>此时在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可查看你的博客！</p>
+<p>其中的博文便包含了一些简易的操作指令与讲解</p>
+<p><strong>恭喜！你已经迈出了令人愉快的第一步！</strong></p>
+</li>
+</ul>
+<hr>
+<h1 id="Hexo的Github上线"><a href="#Hexo的Github上线" class="headerlink" title="Hexo的Github上线"></a>Hexo的Github上线</h1><p>我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站<a href="https://github.com" target="_blank" rel="noopener">Github</a>提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</p>
+<ul>
+<li><h3 id="Github账户创建一个项目"><a href="#Github账户创建一个项目" class="headerlink" title="Github账户创建一个项目"></a>Github账户创建一个项目</h3><p>使用你刚才创建的Github账户，在主页右上角找到新建项目<strong>New repository</strong></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide1.png" alt=""></p>
+<p>并建立一个与你名称相同前缀的项目名<strong>(YourName.github.io)</strong></p>
+<p>此处因为我已经创建过所以不能重复创建，你可直接点<strong>Create repository</strong></p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide2.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><h3 id="配置Git推送套件"><a href="#配置Git推送套件" class="headerlink" title="配置Git推送套件"></a>配置Git推送套件</h3><p>打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide3.png" alt=""></p>
+<p>在代码末尾添加：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  	<span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">	<span class="attr">repo:</span> <span class="string">"https://github.com/你的名字/你的名字.github.io.git"</span></span><br><span class="line">  	<span class="attr">branch:</span> <span class="string">"master"</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide4.png" alt=""></p>
+<p>至此Git推送套件已准备就绪</p>
+<ul>
+<li><h3 id="测试Git推送套件"><a href="#测试Git推送套件" class="headerlink" title="测试Git推送套件"></a>测试Git推送套件</h3><p>在命令行中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;(你的Github邮箱)</span><br><span class="line">git config --global user.name &quot;Your Name&quot;(你的Github名称)</span><br></pre></td></tr></table></figure>
+
+<p>在命令行中输入：</p>
+<p><code>hexo d</code></p>
+<p>此时会哗啦啦流淌一行行提示，并会让你输入你的Github名称与密码</p>
+<p>当提示结束时，便可进入网页 你的名称.github.io 查看你的博客啦！</p>
+<p><strong>恭喜你！你已经迈出了令人愉快的第二步！</strong></p>
+<p><strong>剩下的路你可大胆摸索！大胆创作！</strong></p>
+<p><strong>请记得<code>hexo d -g</code>让我们看见！</strong></p>
+</li>
+</ul>
+<hr>
+<h1 id="Hexo主题的个性化"><a href="#Hexo主题的个性化" class="headerlink" title="Hexo主题的个性化"></a>Hexo主题的个性化</h1><ul>
+<li>这是个相当主观、个性的内容，我无意引导各位的审美取向。</li>
+<li>还请各位自行百度，Google个性主题定制教程哦~</li>
+<li>大家比我懂美多啦！</li>
+<li><strong>欢迎下方评论区留下你的博客地址<del>~</del></strong></li>
+</ul>
+<hr>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><ul>
+<li><h3 id="博客内容的倡议"><a href="#博客内容的倡议" class="headerlink" title="博客内容的倡议"></a>博客内容的倡议</h3><p>不能传播危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的内容。</p>
+<p>不能散布谣言，扰乱社会秩序，破坏社会稳定。</p>
+<p>不能散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪。</p>
+<p>不能侮辱或者诽谤他人，侵害他人合法权益。</p>
+<p>——《互联网信息服务管理办法》节选</p>
+<h4 id="我们要约束自己的行为，因为这关乎所有人的互联网自由。"><a href="#我们要约束自己的行为，因为这关乎所有人的互联网自由。" class="headerlink" title="我们要约束自己的行为，因为这关乎所有人的互联网自由。"></a><strong>我们要约束自己的行为，因为这关乎所有人的互联网自由。</strong></h4></li>
+<li><h3 id="博客访问地址"><a href="#博客访问地址" class="headerlink" title="博客访问地址"></a>博客访问地址</h3><p><a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a>  (本地服务器开启可访问)</p>
+<p><a href="">YourName.github.io</a>  (随时随地访问最近一次推送版本的博客)</p>
+</li>
+<li><h3 id="常用Hexo指令"><a href="#常用Hexo指令" class="headerlink" title="常用Hexo指令"></a>常用Hexo指令</h3><p><strong>hexo clean</strong> (清除缓存)<br><strong>hexo g</strong> (迭代博客内容，每次编辑后操作)<br><strong>hexo d</strong> (推送至github服务器)<br><strong>hexo new page “XXX”</strong> (新建一个名为XXX的页面)<br><strong>hexo new “title”</strong> (新建一个名为title的文章)<br>etc…`</p>
+</li>
+<li><h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><p>如果有任何不甚明白的地方，欢迎下方留言提问。</p>
+<p>亦可Email （<a href="mailto:magidragon@foxmail.com">magidragon@foxmail.com</a>）联系我</p>
+<p><strong>期待高效交流，教学相长！</strong></p>
+</li>
+</ul>
+<hr>
+<p>2020 年 7 月 16 日 凌晨 1：20 完稿</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MagiBlockchain</title>
     <url>/2020/07/19/MagiBlockchain/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="MagiBlockchain"><a href="#MagiBlockchain" class="headerlink" title="MagiBlockchain"></a>MagiBlockchain</h1><p>项目类型：区块链</p>
@@ -14,12 +185,12 @@
 <p><strong>(注意音量哦)</strong></p>
 </blockquote>
 
-        <div id="aplayer-owgziRnM" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-wGRUePIs" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-owgziRnM"),
+            element: document.getElementById("aplayer-wGRUePIs"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -200,121 +371,6 @@
         <tag>区块链</tag>
         <tag>Java</tag>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>烧椰子树的家伙找到了， 他在火星！</title>
-    <url>/2020/07/23/Tianwen-1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="天问一号"><a href="#天问一号" class="headerlink" title="天问一号"></a>天问一号</h2><p>“我们的征途是星辰大海”，多浪漫。</p>
-<p>“天问”是中国行星探测任务名称，该名称源于屈原长诗《天问》，表达了中华民族对真理追求的坚韧与执着，体现了对自然和宇宙空间探索的文化传承，寓意探求科学真理征途漫漫，追求科技创新永无止境。</p>
-<p>2020年10月14日将迎来一轮火星冲日，创造了2020年7、8月这个发射窗口期。</p>
-<blockquote>
-<p>7月23日12时41分，我国在海南岛东北海岸中国文昌航天发射场，用长征五号遥四运载火箭成功发射首次火星探测任务天问一号探测器，火箭飞行约 2167 秒后，成功将探测器送入预定轨道，开启火星探测之旅，迈出了我国行星探测第一步。天问一号探测器将在地火转移轨道飞行约7个月后，到达火星附近，通过“刹车”完成火星捕获，进入环火轨道，并择机开展着陆、巡视等任务，进行火星科学探测。（吕炳宏、唐巍）</p>
-</blockquote>
-<p>根据邢强博士的计算，天问一号火星探测器预计在2021年2月11日，也就是2021年的大年三十被火星引力俘获；按当时的探测器速度，取最优减速轨道，考虑火星着陆前的绕火探测时间，预计2021年4月23日，也就是2021年的中国航天日前夜开始实施火星着陆机动。</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/tianwen.png" alt=""></p>
-<p>发射的今天，也是高考放榜之时。我的表弟考了531分，过重点线了，很感动他把握住了机会。</p>
-<h2 id="问天"><a href="#问天" class="headerlink" title="问天"></a>问天</h2><p>遂古之初，谁传道之？<br>上下未形，何由考之？<br>冥昭瞢暗，谁能极之？<br>冯翼惟象，何以识之？<br>明明暗暗，惟时何为？<br>阴阳三合，何本何化？<br>圜则九重，孰营度之？<br>惟兹何功，孰初作之？<br>斡维焉系，天极焉加？<br>八柱何当，东南何亏？<br>九天之际，安放安属？<br>隅隈多有，谁知其数？<br>天何所沓？十二焉分？<br>日月安属？列星安陈？<br>——屈原《天问》节选</p>
-]]></content>
-      <tags>
-        <tag>CNSA</tag>
-        <tag>天问一号</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何激活Windows10系统</title>
-    <url>/2020/07/22/WindowsActivation/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>近来许多小伙伴问我关于Windows10系统的激活问题。我可能不能一个个详细的解答或者一个个帮忙激活。为了避免小伙伴再去淘宝买激活密钥，下面我将写一篇简单的激活操作教程，希望能帮助到各位小伙伴。</p>
-<h2 id="如何判断系统是否激活"><a href="#如何判断系统是否激活" class="headerlink" title="如何判断系统是否激活"></a>如何判断系统是否激活</h2><ul>
-<li>（简单）屏幕右下角出现 “激活Windows” 则系统处于未激活或者激活过期状态。</li>
-<li>（进阶）在Powershell中输入<code>slmgr.vbs -xpr</code>，根据提示判断是否激活状态。</li>
-</ul>
-<h2 id="为什么我们需要激活"><a href="#为什么我们需要激活" class="headerlink" title="为什么我们需要激活"></a>为什么我们需要激活</h2><ul>
-<li>为了好看</li>
-<li>为了安全</li>
-<li>你说了算</li>
-</ul>
-<h2 id="如何激活"><a href="#如何激活" class="headerlink" title="如何激活"></a>如何激活</h2><ul>
-<li>下载激活工具<strong><a href="https://github.com/MagiDrag0n/CDN/releases/download/1.0.0.0/Activation.zip" target="_blank" rel="noopener">点我跳转</a></strong> (1.7MB)</li>
-<li>解压激活工具</li>
-<li>按下<code>Windows</code>键输入<code>PowerShell</code>，<strong>右键以管理员权限运行。</strong></li>
-<li>在PowerShell界面中输入 <code>slmgr.vbs /upk</code>卸载当前激活密钥。</li>
-<li><strong>右键以管理员权限运行</strong>解压后的激活工具中的 <strong>Activation.cmd</strong></li>
-<li>按任意键进入第二界面，再按1选择激活当前系统</li>
-<li>等待完成，大概需要几分钟。</li>
-<li>在Powershell中输入<code>slmgr.vbs -xpr</code>，若提示已永久激活则激活成功。</li>
-</ul>
-<h2 id="激活过程中出错了怎么办"><a href="#激活过程中出错了怎么办" class="headerlink" title="激活过程中出错了怎么办"></a>激活过程中出错了怎么办</h2><p>首先，在不知道什么问题的情况下，建议按照步骤重新做一遍。</p>
-<ul>
-<li><p>网络问题</p>
-<p>找一个稳定的网络接入点，重复操作</p>
-</li>
-<li><p>各项操作中提示</p>
-<ul>
-<li>错误:0xC004F025 拒绝访问</li>
-<li>所请求的操作需要提升特权</li>
-</ul>
-<p>这是因为你没有以管理员权限运行导致的</p>
-<p>请<strong>右键以管理员权限运行</strong></p>
-</li>
-<li><p>激活工具提示 <code>0x80070422</code> 服务未启动</p>
-<p>这是由于 Windows update 服务未启动导致的。</p>
-<ol>
-<li><code>Windows 键 + R 键</code>输入 <code>services.msc</code>并回车</li>
-<li>在services界面内找到 <code>Windows Update</code>服务</li>
-<li>调整<code>Windows Update</code>服务为<strong>手动</strong>，并<strong>启动</strong>服务</li>
-<li>重新<strong>以管理员权限打开激活工具</strong>，重新激活</li>
-</ol>
-</li>
-<li><p>少数品牌的笔记本电脑预装系统锁定权限</p>
-<p>如果上面的问题你都没出现，但仍然未能激活。</p>
-<p>如果上面的问题你都出现了，并且按照我上方提示仍未能激活。</p>
-<p>这便可能是预装系统的问题，建议直接联系我，我飞过去帮你操作（重装解决一切问题）。</p>
-</li>
-<li><p>尚未发现其他问题</p>
-</li>
-</ul>
-<h2 id="一些小提示"><a href="#一些小提示" class="headerlink" title="一些小提示"></a>一些小提示</h2><ul>
-<li><p><code>Windows键</code>是一个微软标志的按键，部分品牌笔记本电脑上是<code>Start键</code></p>
-</li>
-<li><p>各项命令行操作都要以<strong>管理员权限运行</strong></p>
-</li>
-<li><p><code>按下任意键</code>意思是按下键盘上任何一个按键都可以的意思</p>
-</li>
-<li><p>小朋友，你是不是还有很多疑惑？</p>
-<p>要是上面仍然没有解决你的问题，来找我吧~我看到消息就会找你的。</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Windows10</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何成为比奇堡公敌</title>
-    <url>/2020/07/19/BottomFish/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>静态博客有很多优点，但是想要更好的效果则需要折腾一下。</p>
-<p>效果就在页脚，那么如何实现养鱼呢？下文简单的介绍一下在Butterfly主题中，引入养鱼js的方法。</p>
-<h2 id="如何在页脚养鱼？"><a href="#如何在页脚养鱼？" class="headerlink" title="如何在页脚养鱼？"></a>如何在页脚养鱼？</h2><p>源码已全部打包上传CDN，只需在配置文件引导即可调用。</p>
-<ul>
-<li><p>在<code>themes/butterfly</code>的<code>_config.yml</code>文件中引导页脚养鱼js：</p>
-<p><a href="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js</a></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="comment"># - &lt;link rel="stylesheet" href="/xxx.css"&gt;</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src="https://cdn.jsdelivr.net/gh/magidrag0n/CDN/fishes.js"&gt;&lt;/script&gt;</span></span><br><span class="line">    <span class="comment"># - &lt;script src="xxxx"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>然后在<code>themes/butterfly/source/css/_layout/footer.styl</code>调整主题的页脚阴影透明度</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">background-color: alpha($dark-black, .1)  &#x2F;&#x2F;.5改成.1</span><br></pre></td></tr></table></figure>
-</li>
-<li><pre><code class="commonlisp">hexo clean
-hexo d -g
-hexo s</code></pre>
-<p>至此你就可以看到鱼生生不息地在你的鱼塘里翻滚啦！！！</p>
-<p>感谢木槿指导，不然我也成为不了鱼塘霸主，哈哈哈。</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>博客美化</tag>
-        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -798,147 +854,91 @@ hexo s</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>十分钟建站并上线</title>
-    <url>/2020/07/16/HexoBlog-OnlineInTen/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看到我的小小博客，或者看到很多大大的博客，你是不是也心动了！也想试试自己建站了呢？</p>
-<p>Very Easy！和我一起利用十分钟建立属于你的网站并上线吧！</p>
-<hr>
-<h1 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h1><ul>
-<li>Github 账号 x1</li>
-<li>cmd, nodejs, npm, git</li>
-</ul>
-<hr>
-<h1 id="前期环境准备"><a href="#前期环境准备" class="headerlink" title="前期环境准备"></a>前期环境准备</h1><ul>
-<li><h3 id="Github-账号的注册："><a href="#Github-账号的注册：" class="headerlink" title="Github 账号的注册："></a>Github 账号的注册：</h3><p>进入<a href="https://github.com/" target="_blank" rel="noopener">Github(点击跳转)</a>并注册一个账号</p>
-</li>
-<li><h3 id="命令行功能检查："><a href="#命令行功能检查：" class="headerlink" title="命令行功能检查："></a>命令行功能检查：</h3><p>Windows键 + R键，在打开的窗口输入<code>cmd</code>并回车，打开的应用便是命令行</p>
-</li>
-<li><h3 id="安装-node-js与检查npm包管理器-："><a href="#安装-node-js与检查npm包管理器-：" class="headerlink" title="安装 node.js与检查npm包管理器 ："></a>安装 node.js与检查npm包管理器 ：</h3><p>进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs官网(点击跳转)</a>下载最新的长期支持版（LTS）并安装</p>
-<p>安装完毕后在命令行中输入 <code>node -v</code>，检查是否成功安装</p>
-<p>在命令行中输入npm -v，检查npm包管理器是否存在</p>
-</li>
-<li><h3 id="非必需-将npm包管理器调整到国内镜像："><a href="#非必需-将npm包管理器调整到国内镜像：" class="headerlink" title="(非必需)将npm包管理器调整到国内镜像："></a>(非必需)将npm包管理器调整到国内镜像：</h3><p>由于npm服务器位于国外，部分用户可能网络体验较差</p>
-<p>国内有清华大学镜像以及阿里淘宝镜像两个优质线路可选</p>
-<p>下面我们选择调整为阿里淘宝镜像</p>
-<p>在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<p>并等待完成，完成后输入<code>cnpm -v</code>检查是否成功安装</p>
-</li>
-<li><h3 id="安装hexo博客框架："><a href="#安装hexo博客框架：" class="headerlink" title="安装hexo博客框架："></a>安装hexo博客框架：</h3><p>首先将命令行当前文件夹切换到一个新的空文件夹(不建议中文)当中</p>
-<p>然后在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli  （未调整镜像输入这个）</span><br><span class="line"></span><br><span class="line">cnpm install -g hexo-cl  （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
-
-<p>进度跑完以后，输入<code>hexo -v</code>检查是否安装成功</p>
-<p><u><strong>后文若未特别说明，均默认命令行处于当前文件夹中操作</strong></u></p>
-</li>
-</ul>
-<ul>
-<li><h3 id="安装Git推送套件："><a href="#安装Git推送套件：" class="headerlink" title="安装Git推送套件："></a>安装Git推送套件：</h3><p>在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git  （未调整镜像输入这个）</span><br><span class="line">  cnpm install --save hexo-deployer-git （调整了镜像输入这个）</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<p>  Tips：安装完成后会有一项Warning提醒，不用担心，敬请忽略</p>
-<hr>
-<h1 id="Hexo本地建站"><a href="#Hexo本地建站" class="headerlink" title="Hexo本地建站"></a>Hexo本地建站</h1><ul>
-<li><h3 id="快速开始："><a href="#快速开始：" class="headerlink" title="快速开始："></a>快速开始：</h3><p>在命令行中输入：</p>
-<p><code>hexo init</code></p>
-<p>此步骤会自动克隆一个Landscape的主题博客</p>
-<p>并且你将在你的博客目录下看到自动生成的文件</p>
-</li>
-<li><h3 id="启动本地博客服务器："><a href="#启动本地博客服务器：" class="headerlink" title="启动本地博客服务器："></a>启动本地博客服务器：</h3><p>在命令行中输入：</p>
-<p><code>hexo s</code></p>
-<p>将会提示你：</p>
-<p><code>INFO  Start processing.</code><br><code>INFO  Hexo is running at http://localhost:4000.Press Ctrl+C to stop.</code></p>
-<p>此时在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 便可查看你的博客！</p>
-<p>其中的博文便包含了一些简易的操作指令与讲解</p>
-<p><strong>恭喜！你已经迈出了令人愉快的第一步！</strong></p>
-</li>
-</ul>
-<hr>
-<h1 id="Hexo的Github上线"><a href="#Hexo的Github上线" class="headerlink" title="Hexo的Github上线"></a>Hexo的Github上线</h1><p>我们刚才建立的网站只能在你使用的电脑中查看，即便拿出手机输入相同网址亦是不能查看的。我们需要让好朋友们看到我们的网站，就需要将博客服务器从本地局域服务器推送到云端服务器，让所有人都可以访问。好消息是作为一名程序员，整个互联网都对你很温柔，尤其是全球第一大程序员交友网站<a href="https://github.com" target="_blank" rel="noopener">Github</a>提供了免费的静态页面服务器与强大的图床支持（图床可能另开一版讲）。我们一起来操作吧！</p>
-<ul>
-<li><h3 id="Github账户创建一个项目"><a href="#Github账户创建一个项目" class="headerlink" title="Github账户创建一个项目"></a>Github账户创建一个项目</h3><p>使用你刚才创建的Github账户，在主页右上角找到新建项目<strong>New repository</strong></p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide1.png" alt=""></p>
-<p>并建立一个与你名称相同前缀的项目名<strong>(YourName.github.io)</strong></p>
-<p>此处因为我已经创建过所以不能重复创建，你可直接点<strong>Create repository</strong></p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide2.png" alt=""></p>
-</li>
-</ul>
-<ul>
-<li><h3 id="配置Git推送套件"><a href="#配置Git推送套件" class="headerlink" title="配置Git推送套件"></a>配置Git推送套件</h3><p>打开你创建的博客目录文件夹，找到_config.yml这个文件并打开编辑</p>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide3.png" alt=""></p>
-<p>在代码末尾添加：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  	<span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line">	<span class="attr">repo:</span> <span class="string">"https://github.com/你的名字/你的名字.github.io.git"</span></span><br><span class="line">  	<span class="attr">branch:</span> <span class="string">"master"</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/guide4.png" alt=""></p>
-<p>至此Git推送套件已准备就绪</p>
-<ul>
-<li><h3 id="测试Git推送套件"><a href="#测试Git推送套件" class="headerlink" title="测试Git推送套件"></a>测试Git推送套件</h3><p>在命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;(你的Github邮箱)</span><br><span class="line">git config --global user.name &quot;Your Name&quot;(你的Github名称)</span><br></pre></td></tr></table></figure>
-
-<p>在命令行中输入：</p>
-<p><code>hexo d</code></p>
-<p>此时会哗啦啦流淌一行行提示，并会让你输入你的Github名称与密码</p>
-<p>当提示结束时，便可进入网页 你的名称.github.io 查看你的博客啦！</p>
-<p><strong>恭喜你！你已经迈出了令人愉快的第二步！</strong></p>
-<p><strong>剩下的路你可大胆摸索！大胆创作！</strong></p>
-<p><strong>请记得<code>hexo d -g</code>让我们看见！</strong></p>
-</li>
-</ul>
-<hr>
-<h1 id="Hexo主题的个性化"><a href="#Hexo主题的个性化" class="headerlink" title="Hexo主题的个性化"></a>Hexo主题的个性化</h1><ul>
-<li>这是个相当主观、个性的内容，我无意引导各位的审美取向。</li>
-<li>还请各位自行百度，Google个性主题定制教程哦~</li>
-<li>大家比我懂美多啦！</li>
-<li><strong>欢迎下方评论区留下你的博客地址<del>~</del></strong></li>
-</ul>
-<hr>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><ul>
-<li><h3 id="博客内容的倡议"><a href="#博客内容的倡议" class="headerlink" title="博客内容的倡议"></a>博客内容的倡议</h3><p>不能传播危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的内容。</p>
-<p>不能散布谣言，扰乱社会秩序，破坏社会稳定。</p>
-<p>不能散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪。</p>
-<p>不能侮辱或者诽谤他人，侵害他人合法权益。</p>
-<p>——《互联网信息服务管理办法》节选</p>
-<h4 id="我们要约束自己的行为，因为这关乎所有人的互联网自由。"><a href="#我们要约束自己的行为，因为这关乎所有人的互联网自由。" class="headerlink" title="我们要约束自己的行为，因为这关乎所有人的互联网自由。"></a><strong>我们要约束自己的行为，因为这关乎所有人的互联网自由。</strong></h4></li>
-<li><h3 id="博客访问地址"><a href="#博客访问地址" class="headerlink" title="博客访问地址"></a>博客访问地址</h3><p><a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a>  (本地服务器开启可访问)</p>
-<p><a href="">YourName.github.io</a>  (随时随地访问最近一次推送版本的博客)</p>
-</li>
-<li><h3 id="常用Hexo指令"><a href="#常用Hexo指令" class="headerlink" title="常用Hexo指令"></a>常用Hexo指令</h3><p><strong>hexo clean</strong> (清除缓存)<br><strong>hexo g</strong> (迭代博客内容，每次编辑后操作)<br><strong>hexo d</strong> (推送至github服务器)<br><strong>hexo new page “XXX”</strong> (新建一个名为XXX的页面)<br><strong>hexo new “title”</strong> (新建一个名为title的文章)<br>etc…`</p>
-</li>
-<li><h3 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h3><p>如果有任何不甚明白的地方，欢迎下方留言提问。</p>
-<p>亦可Email （<a href="mailto:magidragon@foxmail.com">magidragon@foxmail.com</a>）联系我</p>
-<p><strong>期待高效交流，教学相长！</strong></p>
-</li>
-</ul>
-<hr>
-<p>2020 年 7 月 16 日 凌晨 1：20 完稿</p>
+    <title>烧椰子树的家伙找到了， 他在火星！</title>
+    <url>/2020/07/23/Tianwen-1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="天问一号"><a href="#天问一号" class="headerlink" title="天问一号"></a>天问一号</h2><p>“我们的征途是星辰大海”，多浪漫。</p>
+<p>“天问”是中国行星探测任务名称，该名称源于屈原长诗《天问》，表达了中华民族对真理追求的坚韧与执着，体现了对自然和宇宙空间探索的文化传承，寓意探求科学真理征途漫漫，追求科技创新永无止境。</p>
+<p>2020年10月14日将迎来一轮火星冲日，创造了2020年7、8月这个发射窗口期。</p>
+<blockquote>
+<p>7月23日12时41分，我国在海南岛东北海岸中国文昌航天发射场，用长征五号遥四运载火箭成功发射首次火星探测任务天问一号探测器，火箭飞行约 2167 秒后，成功将探测器送入预定轨道，开启火星探测之旅，迈出了我国行星探测第一步。天问一号探测器将在地火转移轨道飞行约7个月后，到达火星附近，通过“刹车”完成火星捕获，进入环火轨道，并择机开展着陆、巡视等任务，进行火星科学探测。（吕炳宏、唐巍）</p>
+</blockquote>
+<p>根据邢强博士的计算，天问一号火星探测器预计在2021年2月11日，也就是2021年的大年三十被火星引力俘获；按当时的探测器速度，取最优减速轨道，考虑火星着陆前的绕火探测时间，预计2021年4月23日，也就是2021年的中国航天日前夜开始实施火星着陆机动。</p>
+<p><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/tianwen.png" alt=""></p>
+<p>发射的今天，也是高考放榜之时。我的表弟考了531分，过重点线了，很感动他把握住了机会。</p>
+<h2 id="问天"><a href="#问天" class="headerlink" title="问天"></a>问天</h2><p>遂古之初，谁传道之？<br>上下未形，何由考之？<br>冥昭瞢暗，谁能极之？<br>冯翼惟象，何以识之？<br>明明暗暗，惟时何为？<br>阴阳三合，何本何化？<br>圜则九重，孰营度之？<br>惟兹何功，孰初作之？<br>斡维焉系，天极焉加？<br>八柱何当，东南何亏？<br>九天之际，安放安属？<br>隅隈多有，谁知其数？<br>天何所沓？十二焉分？<br>日月安属？列星安陈？<br>——屈原《天问》节选</p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
+        <tag>CNSA</tag>
+        <tag>天问一号</tag>
       </tags>
   </entry>
   <entry>
-    <title>711全世界都在早起听Eason</title>
-    <url>/2020/07/11/BusyAndMusic/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Eason-Live-is-so-much-better-with-Music"><a href="#Eason-Live-is-so-much-better-with-Music" class="headerlink" title="Eason Live is so much better with Music"></a>Eason Live is so much better with Music</h1><h2 id="线上慈善音乐会-有了音乐生活更美好-Eason"><a href="#线上慈善音乐会-有了音乐生活更美好-Eason" class="headerlink" title="线上慈善音乐会:有了音乐生活更美好, Eason."></a>线上慈善音乐会:有了音乐生活更美好, Eason.</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/Eason.jpg" width=742/>
-
-<h3 id="bilibili完整录像-视频已掉，请上Youtube查看哦"><a href="#bilibili完整录像-视频已掉，请上Youtube查看哦" class="headerlink" title="bilibili完整录像(视频已掉，请上Youtube查看哦~)"></a>bilibili完整录像(视频已掉，请上Youtube查看哦~)</h3><iframe width=256 src="//player.bilibili.com/player.html?aid=883769547&bvid=BV1YK4y1s7uK&cid=211145735&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<blockquote>
-<p>&nbsp;&nbsp;原来全世界都在早起看陈奕迅。从《与你常在》《天使的礼物》《黄金时代》《太阳照常升起》到《相信你的人》，他难得话很少，而他想说的话，大概都放进了今天早上的这份歌单了。黄金广场内分手的人，有没有在时代门外再聚？看着曾经天天路过的K11 Amuse尖沙咀海傍，维港那边天色也慢慢亮起来，而我们最喜爱的陈奕迅，依旧像他十八岁时那样生猛，旁若无人地毫无代价地，站在街头唱最幸福的歌。</p>
-</blockquote>
-<hr>
-<h2 id="遥远的香港第一印象-维多利亚"><a href="#遥远的香港第一印象-维多利亚" class="headerlink" title="遥远的香港第一印象-维多利亚"></a>遥远的香港第一印象-维多利亚</h2><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/MagiDrag0n/PicBed/img/img_1677.jpg" width=742/>
+    <title>如何激活Windows10系统</title>
+    <url>/2020/07/22/WindowsActivation/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>近来许多小伙伴问我关于Windows10系统的激活问题。我可能不能一个个详细的解答或者一个个帮忙激活。为了避免小伙伴再去淘宝买激活密钥，下面我将写一篇简单的激活操作教程，希望能帮助到各位小伙伴。</p>
+<h2 id="如何判断系统是否激活"><a href="#如何判断系统是否激活" class="headerlink" title="如何判断系统是否激活"></a>如何判断系统是否激活</h2><ul>
+<li>（简单）屏幕右下角出现 “激活Windows” 则系统处于未激活或者激活过期状态。</li>
+<li>（进阶）在Powershell中输入<code>slmgr.vbs -xpr</code>，根据提示判断是否激活状态。</li>
+</ul>
+<h2 id="为什么我们需要激活"><a href="#为什么我们需要激活" class="headerlink" title="为什么我们需要激活"></a>为什么我们需要激活</h2><ul>
+<li>为了好看</li>
+<li>为了安全</li>
+<li>你说了算</li>
+</ul>
+<h2 id="如何激活"><a href="#如何激活" class="headerlink" title="如何激活"></a>如何激活</h2><ul>
+<li>下载激活工具<strong><a href="https://github.com/MagiDrag0n/CDN/releases/download/1.0.0.0/Activation.zip" target="_blank" rel="noopener">点我跳转</a></strong> (1.7MB)</li>
+<li>解压激活工具</li>
+<li>按下<code>Windows</code>键输入<code>PowerShell</code>，<strong>右键以管理员权限运行。</strong></li>
+<li>在PowerShell界面中输入 <code>slmgr.vbs /upk</code>卸载当前激活密钥。</li>
+<li><strong>右键以管理员权限运行</strong>解压后的激活工具中的 <strong>Activation.cmd</strong></li>
+<li>按任意键进入第二界面，再按1选择激活当前系统</li>
+<li>等待完成，大概需要几分钟。</li>
+<li>在Powershell中输入<code>slmgr.vbs -xpr</code>，若提示已永久激活则激活成功。</li>
+</ul>
+<h2 id="激活过程中出错了怎么办"><a href="#激活过程中出错了怎么办" class="headerlink" title="激活过程中出错了怎么办"></a>激活过程中出错了怎么办</h2><p>首先，在不知道什么问题的情况下，建议按照步骤重新做一遍。</p>
+<ul>
+<li><p>网络问题</p>
+<p>找一个稳定的网络接入点，重复操作</p>
+</li>
+<li><p>各项操作中提示</p>
+<ul>
+<li>错误:0xC004F025 拒绝访问</li>
+<li>所请求的操作需要提升特权</li>
+</ul>
+<p>这是因为你没有以管理员权限运行导致的</p>
+<p>请<strong>右键以管理员权限运行</strong></p>
+</li>
+<li><p>激活工具提示 <code>0x80070422</code> 服务未启动</p>
+<p>这是由于 Windows update 服务未启动导致的。</p>
+<ol>
+<li><code>Windows 键 + R 键</code>输入 <code>services.msc</code>并回车</li>
+<li>在services界面内找到 <code>Windows Update</code>服务</li>
+<li>调整<code>Windows Update</code>服务为<strong>手动</strong>，并<strong>启动</strong>服务</li>
+<li>重新<strong>以管理员权限打开激活工具</strong>，重新激活</li>
+</ol>
+</li>
+<li><p>少数品牌的笔记本电脑预装系统锁定权限</p>
+<p>如果上面的问题你都没出现，但仍然未能激活。</p>
+<p>如果上面的问题你都出现了，并且按照我上方提示仍未能激活。</p>
+<p>这便可能是预装系统的问题，建议直接联系我，我飞过去帮你操作（重装解决一切问题）。</p>
+</li>
+<li><p>尚未发现其他问题</p>
+</li>
+</ul>
+<h2 id="一些小提示"><a href="#一些小提示" class="headerlink" title="一些小提示"></a>一些小提示</h2><ul>
+<li><p><code>Windows键</code>是一个微软标志的按键，部分品牌笔记本电脑上是<code>Start键</code></p>
+</li>
+<li><p>各项命令行操作都要以<strong>管理员权限运行</strong></p>
+</li>
+<li><p><code>按下任意键</code>意思是按下键盘上任何一个按键都可以的意思</p>
+</li>
+<li><p>小朋友，你是不是还有很多疑惑？</p>
+<p>要是上面仍然没有解决你的问题，来找我吧~我看到消息就会找你的。</p>
+</li>
+</ul>
 ]]></content>
       <tags>
-        <tag>LifeBlog</tag>
-        <tag>Eason</tag>
+        <tag>Windows10</tag>
       </tags>
   </entry>
 </search>
